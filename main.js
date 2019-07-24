@@ -43,7 +43,7 @@ function _openLinkedVSCode(element) {
           "Basic " + btoa("amcveigh:tiggle")
         );
       },
-      data: '"src/genbase.ts"',
+      data: JSON.stringify({ resource: "src/genbase.ts" }),
       success: function(data) {
         console.log(data);
       },
